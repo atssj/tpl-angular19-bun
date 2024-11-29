@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - none
+      - main
 
 jobs:
   build:
@@ -11,21 +11,15 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         name: Checkout code
-      - uses: pnpm/action-setup@v4
-        name: Install pnpm
+      - uses: oven-sh/setup-bun@v1
+        name: Setup Bun
         with:
-          version: 9
-          run_install: true
-      - uses: actions/setup-node@v3
-        name: Set up Node
-        with:
-          node-version: '20'
-          cache: 'pnpm'
+          bun-version: latest
       - name: Install dependencies
-        run: pnpm install
-      - name: Build app
+        run: bun install
+      - name: Build Application
         id: build
-        run: pnpm run build:prod
+        run: bun run build:prod
       - name: Upload static files as artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3
