@@ -1,5 +1,5 @@
 {
-  "name": "modern-angular-app",
+  "name": "tpl-angular19-bun",
   "private": true,
   "scripts": {
     "ng": "ng",

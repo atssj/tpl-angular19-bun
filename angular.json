@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "demo": {
+    "tpl-angular19-bun": {
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -30,7 +30,7 @@
             "assets": [],
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "outputPath": "dist/demo",
+            "outputPath": "dist/tpl-angular19-bun",
             "polyfills": ["zone.js"],
             "scripts": [],
             "styles": ["src/styles/main.scss"],
@@ -41,10 +41,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "development": {
-              "buildTarget": "demo:build:development"
+              "buildTarget": "tpl-angular19-bun:build:development"
             },
             "production": {
-              "buildTarget": "demo:build:production"
+              "buildTarget": "tpl-angular19-bun:build:production"
             }
           },
           "defaultConfiguration": "development"
