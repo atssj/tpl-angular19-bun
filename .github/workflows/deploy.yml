@@ -25,7 +25,7 @@ jobs:
         run: pnpm install
       - name: Build app
         id: build
-        run: pnpm run build -- --base-href /tpl-angular19-bun/
+        run: pnpm run build:prod
       - name: Upload static files as artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3
