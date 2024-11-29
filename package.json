@@ -1,6 +1,10 @@
 {
   "name": "tpl-angular19-bun",
-  "private": true,
+  "homepage": "https://atssj.github.io/tpl-angular19-bun/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atssj/tpl-angular19-bun.git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
