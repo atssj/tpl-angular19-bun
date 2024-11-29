@@ -1,0 +1,15 @@
+@use 'themes/light';
+@use 'themes/dark';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[var(--bg-primary)] text-[var(--text-primary)];
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.container {
+  @apply mx-auto px-4 max-w-7xl;
+}
